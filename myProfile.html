@@ -2,36 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Logeswaran</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <style>
-        .span8{
-                    box-shadow: 0 0 2px black;
-                }
+        .span8{box-shadow: 0 0 2px black;}
+        .outerMost{padding-right: 15px;}
+        .fa_custom {background-color: #0099CC}
+
+        .text-block {
+            position: absolute;
+            bottom: 1px;
+            right: 70px;
+            left: 70px;
+            background-color: #fc35fc;
+            color: black;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
     </style>
 </head>
 <body>
 
     <div class="container-fluid p-3 mb-2 bg-secondary text-white">
         <div class="container-fluid p-3 mb-2 bg-white text-dark">
-            <div class="row">
-                <div class="col-md-4 span4">
+            <div class="row outerMost">
+                <div class="col-md-3 span4">
                     <div class="container">
-                        <img src="photo.gif" class="img-circle" alt="photo" width="304" height="400">
+                        <img src="images/photo.gif" class="img-circle" alt="photo" width="250" height="300">
+                        <!--<div class="bottom-right"><span class="label label-warning btn-lg">Logeswaran</span></div>-->
+                        <div class="text-block">
+                            <h4>Logeswaran</h4>
+                            <p>Full Stack Developer</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-8 span8">
+                <div class="col-md-9 span8">
                     <div class="container">
-                        8 cells
+                        <h3 style="font-weight:bold">Work Experiences</h3>
+                        <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;&nbsp;ArubaNetworks<img src="images/aruba-logo.png" class="img-circle" alt="photo" width="60" height="40"></h4>
                     </div>
                 </div>
             </div>
-
         </div>
+
+        <div class="container-fluid p-3 mb-2 bg-white text-dark">
+            <div class="row outerMost">
+                <div class="col-md-3 span4">
+                    <div class="container">
+                        <h4><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;+91-9566889030</h4>
+                        <h4><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;logeswaran.gnt@gmail.com</h4>
+                        <h4><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Velachery, Chennai-600042</h4>
+                    </div>
+                </div>
+                <div class="col-md-9 span8">
+                    <div class="container">
+                        <h3 style="font-weight:bold">Education</h3>
+                        <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;&nbsp;Thiagarajar College of Engineering<img src="images/tce.jpeg" class="img-circle" alt="photo" width="65" height="50"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-3 mb-2 bg-white text-dark">
+            <div class="row outerMost">
+                <div class="col-md-12 span8">
+                    <div class="container">
+                        <h4>Python<span style="width:20 height:20">
+                        <i class="fa fa-star-o fa_custom fa-2x"></i>
+                        <i class="fa fa-star-o fa_custom fa-2x"></i>
+                        <i class="fa fa-star-o fa_custom fa-2x"></i>
+                        <i class="fa fa-star-o fa_custom fa-2x"></i>
+                        <i class="fa fa-star-o fa-2x"></i></span></h4>
+                        <h4>Python<span style="width:20px; height:20px">
+                        <i class="fa fa-star-o fa_custom fa-2x"></i>
+                        <i class="fa fa-star-o fa_custom fa-2x"></i>
+                        <i class="fa fa-star-o fa_custom fa-2x"></i>
+                        <i class="fa fa-star-o fa_custom fa-2x"></i>
+                        <i class="fa fa-star-o fa-2x"></i></span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+
+
 
 </body>
 </html>
