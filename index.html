@@ -28,7 +28,7 @@
                   var dold = careerStart.getDate();
                   var ydiff = ynew - yold;
                   var mdiff = Math.abs( (mold-12)+(mnew-12))-1
-                  if (mdiff > 12)
+                  if (mdiff >= 12)
                     {
                         ydiff += Math.round(mdiff/12)
                         mdiff = mdiff%12
