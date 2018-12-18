@@ -17,6 +17,29 @@
         .contentItems {padding-left:30px; padding-right:10px;}
         .bottom-right {right: 1px; bottom: 1px; position: absolute;}
     </style>
+    <script type="text/javascript">
+           function dateDiff(careerStart, dateToday)
+                {
+                  var ynew = dateToday.getFullYear();
+                  var mnew = dateToday.getMonth();
+                  var dnew = dateToday.getDate();
+                  var yold = careerStart.getFullYear();
+                  var mold = careerStart.getMonth();
+                  var dold = careerStart.getDate();
+                  var ydiff = ynew - yold;
+                  var mdiff = Math.abs( (mold-12)+(mnew-12))
+                  if (mdiff > 12)
+                    {
+                        ydiff += Math.round(mdiff/12)
+                        mdiff = mdiff%12
+                    }
+                        exp = (ydiff+ "years "+ Math.abs(mdiff)+"months")
+                    }
+
+                    var today = new Date();
+                    var careerStart = new Date("15 January 2014");
+                    dateDiff(careerStart, today)
+    </script>
 </head>
 <body>
 
@@ -236,6 +259,10 @@
         </div>
 
     </div>
+        <script>
+            var element = document.getElementById("exp");
+            element.innerHTML = exp;
+        </script>
 
 </body>
 </html>
